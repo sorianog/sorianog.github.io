@@ -1,62 +1,22 @@
 <html>
   <head>
-    <title>gerosan on liveedu.tv</title>
+    <title>Gerald Soriano</title>
   </head>
   <body>
 
-    <div class="group" id="followers_count">
-      <div class="value" id="followers_count_label">-</div>
-      <div class="title">Followers</div>
+    <div class="group" id="twitter_user">
+      <div class="title">Twitter: @gerosan</div>
     </div>
 
-    <div class="group" id="views_overall">
-      <div class="value" id="views_overall_label">-</div>
-      <div class="title">Views</div>
+    <div class="group" id="linkedin_user">
+      <div class="title">LinkedIn: sorianog</div>
     </div>
 
-    <div class="group" id="views_live">
-      <div class="value" id="views_live_label">-</div>
-      <div class="title">Viewers</div>
+    <div class="group" id="email_contact">
+      <div class="title">Email: Message me on the social media accounts above</div>
     </div>
 
     <script type="text/javascript">
-    var getUrlVars = function() {
-        var vars = [], hash;
-        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-        for(var i = 0; i < hashes.length; i++)
-        {
-            hash = hashes[i].split('=');
-            vars.push(hash[0]);
-            vars[hash[0]] = hash[1];
-        }
-        return vars;
-    }
-
-    var update = function() {
-      var projectID = getUrlVars().project_id
-      fetch('https://www.liveedu.tv/api/v2/projects/' + projectID + '/livestream/', {
-        method: 'get',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        }
-      })
-      .then(function(response) {
-        if (response.status >= 200 && response.status < 300) {
-          return response.json()
-        }
-        setTimeout(update, 1000 * 60 * 2)
-        throw new Error(response.statusText)
-      })
-      .then(function(json) {
-        document.getElementById("followers_count_label").innerHTML = json.user.count_followers
-        document.getElementById("views_overall_label").innerHTML = json.viewsoverall
-        document.getElementById("views_live_label").innerHTML = json.viewers_live
-
-        setTimeout(update, 1000 * 60 * 2)
-      })
-    }
-    update()
     </script>
 
   </body>
