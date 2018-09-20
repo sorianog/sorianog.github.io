@@ -9,7 +9,7 @@
           color: white;
           text-align: center;
           font-family: Georgia;
-          font-size: 24px;
+          font-size: 22px;
       }
       a:link {
           color: white;
@@ -23,11 +23,21 @@
           margin-left: auto;
           margin-right: auto;
       }
+      img.resize {
+          max-width:50%;
+          max-height:50%;
+      }
     </style>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="github-activity-0.1.5.min.css">
+    
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="github-activity-0.1.5.min.js"></script>
   </head>
   <body>
+    <img class="resize" src="https://avatars2.githubusercontent.com/u/13261711?s=200.png" alt="Me" style="width:50%;">
     
-    <img src="https://avatars2.githubusercontent.com/u/13261711?s=300.png" alt="Me" style="width:50%;">
+    <div style="text-align:center;" id="feed"></div>
     
     <div class="group" id="twitter_user">
       <div class="title">Twitter: <a href="https://twitter.com/gerosan/">@gerosan</a></div>
@@ -42,6 +52,12 @@
     </div>
 
     <script type="text/javascript">
+      GitHubActivity.feed({
+        username: "sorianog",
+        // repository: "your-repo", // optional
+        selector: "#feed",
+        limit: 50 // optional
+      });
     </script>
 
   </body>
