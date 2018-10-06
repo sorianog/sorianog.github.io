@@ -1,64 +1,276 @@
-<html>
-  <head>
-    <title>Gerald Soriano</title>
-    <style>
-      body {
-          background-color: black;
-      }
-      .title {
-          color: white;
-          text-align: center;
-          font-family: Georgia;
-          font-size: 22px;
-      }
-      a:link {
-          color: white;
-      }
-      /* visited link */
-      a:visited {
-          color: green;
-      }
-      img {
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-      }
-      img.resize {
-          max-width:50%;
-          max-height:50%;
-      }
-    </style>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    <link rel="stylesheet" href="github-activity-0.1.5.min.css">
-    
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script type="text/javascript" src="github-activity-0.1.5.min.js"></script>
-  </head>
-  <body>
-    <img class="resize" src="https://avatars2.githubusercontent.com/u/13261711?s=200.png" alt="Me" style="width:50%;">
-    
-    <div style="text-align:center;" id="feed"></div>
-    
-    <div class="group" id="twitter_user">
-      <div class="title">Twitter: <a href="https://twitter.com/gerosan/">@gerosan</a></div>
-    </div>
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Gerald Soriano</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	
+	
+	<!-- Font -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura" rel="stylesheet">
+	
+	<!-- Stylesheets -->
+	
+	<link href="common-css/bootstrap.css" rel="stylesheet">
+	
+	<link href="common-css/ionicons.css" rel="stylesheet">
+	
+	<link href="common-css/fluidbox.min.css" rel="stylesheet">
+	
+	<link href="01-cv-portfolio/css/styles.css" rel="stylesheet">
+	
+	<link href="01-cv-portfolio/css/responsive.css" rel="stylesheet">
+	
+</head>
+<body>
+	
+	<header>
+		<div class="container">
+			<div class="heading-wrapper">
+				<div class="row">
+					<div class="col-sm-6 col-md-6 col-lg-4">
+						<div class="info">
+							<i class="icon ion-ios-location-outline"></i>
+							<div class="right-area">
+								<h5>Find Me</h5>
+								<h5>North Eastern Ohio</h5>
+							</div><!-- right-area -->
+						</div><!-- info -->
+					</div><!-- col-sm-4 -->
+					
+					<div class="col-sm-6 col-md-6 col-lg-4">
+						<div class="info">
+							<i class="icon ion-ios-telephone-outline"></i>
+							<div class="right-area">
+								<h5>Call/Text Me</h5>
+								<h6>808-224-5563</h6>
+							</div><!-- right-area -->
+						</div><!-- info -->
+					</div><!-- col-sm-4 -->
+					
+					<div class="col-sm-6 col-md-6 col-lg-4">
+						<div class="info">
+							<i class="icon ion-ios-chatboxes-outline"></i>
+							<div class="right-area">
+								<h5>Email Me</h5>
+								<h6>sorianogerald1@gmail.com</h6>
+							</div><!-- right-area -->
+						</div><!-- info -->
+					</div><!-- col-sm-4 -->
+				</div><!-- row -->
+			</div><!-- heading-wrapper -->
+			
+			<!-- <a class="downlad-btn" href="#">Download CV</a> -->
+		</div><!-- container -->
+	</header>
+	
+	<section class="intro-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1 col-lg-2"></div>
+				<div class="col-md-10 col-lg-8">
+					<div class="intro">
+						<div class="profile-img"><img src="images/profile-pic.jpeg" alt=""></div>
+						<h2><b>Gerald Soriano</b></h2>
+						<h4 class="font-yellow">Software Engineer</h4>
+						<ul class="information margin-tb-30">
+							<li><b>CURRENT ROLE : </b>Mobile Native Applications Devleoper</li>
+							<li><b>EMPLOYER : </b>Progressive Insurance</li>
+							<li><b>EMAIL : </b>sorianogerald1@gmail.com</li>
+						</ul>
+						<ul class="social-icons">
+							<li><a href="https://www.linkedin.com/in/sorianog/"><i class="ion-social-linkedin"></i></a></li>
+							<li><a href="https://github.com/sorianog"><i class="ion-social-github"></i></a></li>
+							<li><a href="https://twitter.com/gerosan"><i class="ion-social-twitter"></i></a></li>
+						</ul>
+					</div><!-- intro -->
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- intro-section -->
+	
+	<section class="about-section section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="heading">
+						<h3><b>About me</b></h3>
+						<h6 class="font-lite-black"><b>PROFESSIONAL PATH</b></h6>
+					</div>
+				</div><!-- col-sm-4 -->
+				<div class="col-sm-8">
+					<p class="margin-b-50">
+						Aloha! My name is Gerald. I was Born and raised in Hawaii, moved to Milwaukee, WI for college, 
+						then moved to Cleveland, OH for a full-time job. While I work on mobile native applications full-time,
+						my true pasison lies with anything Virtual/Augmented Reality!
+					</p>
+					
+					<div class="row">
+						<div class="col-sm-6 col-md-6 col-lg-3">
+							<div class="radial-prog-area margin-b-30">
+								<div class="radial-progress" data-prog-percent=".85">
+									<div></div>
+									<h6 class="progress-title">MOBILE APPS</h6>
+								</div>
+							</div><!-- radial-prog-area-->
+						</div><!-- col-sm-6-->
+					
+						<div class="col-sm-6 col-md-6 col-lg-3">
+							<div class="radial-prog-area margin-b-30">
+								<div class="radial-progress" data-prog-percent=".87">
+									<div></div>
+									<h6 class="progress-title">JAVA</h6>
+								</div>
+							</div><!-- radial-prog-area-->
+						</div><!-- col-sm-6-->
+						
+						<div class="col-sm-6 col-md-6 col-lg-3">
+							<div class="radial-prog-area margin-b-30">
+								<div class="radial-progress" data-prog-percent=".60">
+									<div></div>
+									<h6 class="progress-title">SWIFT</h6>
+								</div>
+							</div><!-- radial-prog-area-->
+						</div><!-- col-sm-6-->
+						
+						<div class="col-sm-6 col-md-6 col-lg-3">
+							<div class="radial-prog-area margin-b-50">
+								<div class="radial-progress" data-prog-percent=".90">
+									<div></div>
+									<h6 class="progress-title">VR/AR</h6>
+								</div>
+							</div><!-- radial-prog-area-->
+						</div><!-- col-sm-6-->
+					
+					</div><!-- row -->
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- about-section -->
+	
+	<section class="experience-section section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="heading">
+						<h3><b>Work Experience</b></h3>
+						<h6 class="font-lite-black"><b>ALL JOBS</b></h6>
+					</div>
+				</div><!-- col-sm-4 -->
+				<div class="col-sm-8">
+				
+					<div class="experience margin-b-50">
+						<h4><b>MOBILE NATIVE APPLICATIONS DEVELOPER</b></h4>
+						<h5 class="font-yellow"><b>PROGRESSIVE INSURANCE</b></h5>
+						<h6 class="margin-t-10">JULY 2017 - PRESENT</h6>
+						<p class="font-semi-white margin-tb-30">Maintain/deliver existing/new features for the Progressive Insurance mobile application on iOS/Android. 
+							Other duties include: 
+						</p>
+						<ul class="list margin-b-30">
+							<li>On-call rotations</li>
+							<li>Flex assignments: Maintain/create new integration tests with Software Test Engineer team</li>
+							<li>Hiring: Tech screenings, College recruiting</li>
+						</ul>
+					</div><!-- experience -->
+					
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+		
+	</section><!-- experience-section -->
+	
+	<section class="education-section section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="heading">
+						<h3><b>Education</b></h3>
+						<h6 class="font-lite-black"><b>ACADEMIC CAREER</b></h6>
+					</div>
+				</div><!-- col-sm-4 -->
+				<div class="col-sm-8">
+					<div class="education-wrapper">
+						<div class="education margin-b-50">
+							<h4><b>BACHELOR'S DEGREE IN SOFTWARE ENGINEERING</b></h4>
+							<h5 class="font-yellow"><b>MILWAUKEE SCHOOL OF ENGINEERING</b></h5>
+							<h6 class="font-lite-black margin-t-10">GRADUATED IN MAY 2017(4 YEARS)</h6>
+							<p class="margin-tb-30">Software engineering (SE) is concerned with developing and maintaining software systems that behave reliably and efficiently, are affordable to develop and maintain, and satisfy all the requirements that customers have defined for them. SEs must think creatively about the design of software systems, find clever solutions to problems, exploit the best engineering practices, and maintain a high-level vision of how all the parts fit together.
+								<a href="https://www.msoe.edu/academics/undergraduate-degrees/program/software-engineering/">Click here to learn more</a>
+							</p>
+						</div><!-- education -->
+					</div><!-- education-wrapper -->
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+		
+	</section><!-- about-section -->
+	
+	<section class="counter-section" id="counter">
+		<div class="container">
+			<div class="row">
+			
+				<div class="col-sm-6 col-md-6 col-lg-3">
+					<div class="counter margin-b-30">
+						<h1 class="title"><b><span class="counter-value" data-duration="400" data-count="1">0</span></b></h1>
+						<h5 class="desc"><b>Coder Degrees</b></h5>
+					</div><!-- counter -->
+				</div><!-- col-md-3-->
+				
+				<div class="col-sm-6 col-md-6 col-lg-3">
+					<div class="counter margin-b-30">
+						<h1 class="title"><b><span class="counter-value" data-duration="1400" data-count="5">0</span></b></h1>
+						<h5 class="desc"><b>Project Completed</b></h5>
+					</div><!-- counter -->
+				</div><!-- col-md-3-->
+				
+				<div class="col-sm-6 col-md-6 col-lg-3">
+					<div class="counter margin-b-30">
+						<h1 class="title"><b><span class="counter-value" data-duration="700" data-count="1">0</span></b></h1>
+						<h5 class="desc"><b>Satisfied Clients</b></h5>
+					</div><!-- counter -->
+				</div><!-- col-md-3-->
+				
+				<div class="col-sm-6 col-md-6 col-lg-3">
+					<div class="counter margin-b-30">
+						<h1 class="title"><b><span class="counter-value" data-duration="2000" data-count="1">0</span></b></h1>
+						<h5 class="desc"><b>Finished Projects</b></h5>
+					</div><!-- margin-b-30 -->
+				</div><!-- col-md-3-->
+				
+			</div><!-- row-->
+		</div><!-- container-->
+    </section><!-- counter-section-->
+	
+	<footer>
+		<p class="copyright">
+			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ion-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+		</p>
 
-    <div class="group" id="linkedin_user">
-      <div class="title">LinkedIn: <a href="https://www.linkedin.com/in/sorianog/">sorianog</a></div>
-    </div>
 
-    <div class="group" id="contact_me">
-      <div class="title">Let's connect and chat!</div>
-    </div>
-
-    <script type="text/javascript">
-      GitHubActivity.feed({
-        username: "sorianog",
-        // repository: "your-repo", // optional
-        selector: "#feed",
-        limit: 50 // optional
-      });
-    </script>
-
-  </body>
+	</footer>
+	
+	
+	<!-- SCIPTS -->
+	
+	<script src="common-js/jquery-3.2.1.min.js"></script>
+	
+	<script src="common-js/tether.min.js"></script>
+	
+	<script src="common-js/bootstrap.js"></script>
+	
+	<script src="common-js/isotope.pkgd.min.js"></script>
+	
+	<script src="common-js/jquery.waypoints.min.js"></script>
+	
+	<script src="common-js/progressbar.min.js"></script>
+	
+	<script src="common-js/jquery.fluidbox.min.js"></script>
+	
+	<script src="common-js/scripts.js"></script>
+	
+</body>
 </html>
