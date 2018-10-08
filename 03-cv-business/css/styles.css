@@ -124,7 +124,8 @@ b.max-bold{ font-weight: 700; }
 	right: 0; background: rgba(0,0,0, .2); }
 
 	
-/* HEADER */
+/* HEADER */
+
 .intro-section .heading-wrapper{ border-radius: 5px; padding: 30px 40px 20px; margin-bottom: 50px;
 	background: #FFAD01; color: #fff; }
 
@@ -170,7 +171,7 @@ b.max-bold{ font-weight: 700; }
 
 .counter{ position: relative; }
 	
-.counter .title{ color: #FFA600; text-align: right; margin-right: 130px; }
+.counter .title{ color: #0DE014; text-align: right; margin-right: 130px; }
 
 .counter .desc{ position: absolute; bottom: 4px; right: 0px; width: 110px; }
 
