@@ -202,7 +202,7 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 /* ACCORDIANS */
 
 .panel-area .panel-title{ padding: 10px 20px; cursor: pointer; position: relative; color: #fff;
-	border-radius: 3px; background: #0DE014; color: #fff; }
+	border-radius: 3px; background: #105E3E; color: #fff; }
 
 .panel-area .panel-desc{ max-height: 0; overflow: hidden; opacity: 0;
 	-webkit-transition: all .05s, opacity .25s .1s, -webkit-transform .1s; 
@@ -247,7 +247,7 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 
 .counter{ position: relative; }
 	
-.counter .title{ text-align: right; margin-right: 130px; color: #0DE014; }
+.counter .title{ text-align: right; margin-right: 130px; color: #105E3E; }
 
 .counter .desc{ position: absolute; bottom: 4px; right: 0px; width: 110px; }
 
